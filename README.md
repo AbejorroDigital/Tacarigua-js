@@ -45,15 +45,18 @@ Hemos desarrollado un juego de combate espacial arcade de alta intensidad comple
 Enlaces de producción servidos a nivel global desde la red Edge de Netlify:
 
 * **ESM Minificado (Producción):**  
-  `https://tacariguajs.netlify.app/dist/tacarigua.min.js`
+  [tacarigua.min.js](https://tacariguajs.netlify.app/dist/tacarigua.min.js)
 
 * **ESM Unificado (Debug / Desarrollo):**  
-  `https://tacariguajs.netlify.app/dist/tacarigua.js`
+  [tacarigua.js](https://tacariguajs.netlify.app/dist/tacarigua.js)
 
 * **UMD Universal (Legacy / Script Tag):**  
-  `https://tacariguajs.netlify.app/dist/tacarigua.umd.js`
+  [tacarigua.umd.js](https://tacariguajs.netlify.app/dist/tacarigua.umd.js)
+
+---
 
 ```
+
                   ARQUITECTURA HISTÓRICA                             TACARIGUA.JS v1.0.0
  ┌──────────────────────────────────────────────────┐      ┌──────────────────────────────────────────────────┐
  │ • Herencia OOP profunda (Phaser.Class / AoS)     │      │ • Diseño Orientado a Datos (SoA) + Adaptador OOP │
