@@ -40,17 +40,18 @@ Hemos desarrollado un juego de combate espacial arcade de alta intensidad comple
 ¡Pruébalo, desafía tu récord y apoya este proyecto para demostrar lo que la web moderna es capaz de lograr!
 
 ---
+## 🌐 Distribución CDN Directa
 
-## 💡 ¿Por qué TacariguaJS? El Salto Generacional
+Enlaces de producción servidos a nivel global desde la red Edge de Netlify:
 
-Inspirado profundamente en la ergonomía y la historia de **Phaser**, TacariguaJS surge de una necesidad crítica: **la web ha cambiado radicalmente.**
+* **ESM Minificado (Producción):**  
+  `https://tacariguajs.netlify.app/dist/tacarigua.min.js`
 
-Las bases tradicionales de motores 2D web arrastran deudas técnicas acumuladas durante más de una década:
-* El recolector de basura (*Garbage Collector*) destruye la fluidez con micro-pausas provocadas por objetos temporales en el *heap*.
-* Los cálculos de físicas y audio saturan el hilo principal del DOM (*Main Thread*).
-* La máquina de estados imperativa de WebGL 1/2 y los fragmentados *pipelines* de render ahogan al procesador en llamadas redundantes al driver (*state thrashing*).
+* **ESM Unificado (Debug / Desarrollo):**  
+  `https://tacariguajs.netlify.app/dist/tacarigua.js`
 
-**TacariguaJS es una modernización integral desde cero:**
+* **UMD Universal (Legacy / Script Tag):**  
+  `https://tacariguajs.netlify.app/dist/tacarigua.umd.js`
 
 ```
                   ARQUITECTURA HISTÓRICA                             TACARIGUA.JS v1.0.0
