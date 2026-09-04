@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TacariguaJS - Motor de Videojuegos 2D WebGPU & Zero-GC</title>
+  <meta name="description" content="TacariguaJS es un motor de videojuegos 2D para la web de ultra alto rendimiento enfocado en WebGPU, arquitectura ECS y consumo Zero-GC (~109 KB).">
+  <meta name="keywords" content="TacariguaJS, Game Engine, WebGPU, ECS, 2D Game Engine, JavaScript Engine, Netlify CDN, Zero-GC">
+  <meta name="author" content="Carlos Eduardo García Torín">
+  
+  <!-- Open Graph / Meta etiquetas para redes sociales -->
+  <meta property="og:title" content="TacariguaJS - Ultra High-Performance 2D Web Engine">
+  <meta property="og:description" content="Motor 2D ligero de ~109 KB basado en WebGPU, ECS y arquitectura Zero-GC.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tacariguajs.netlify.app/">
+
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #161b26;
+      --accent: #00ffcc;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    header { border-bottom: 1px solid #232d3f; padding-bottom: 1.5rem; margin-bottom: 2rem; }
+    h1 { color: var(--accent); margin-bottom: 0.5rem; font-size: 2.2rem; }
+    .tagline { font-size: 1.1rem; color: var(--text-muted); }
+    .badge-container { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
+    .badge { background: #1e293b; color: var(--accent); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.85rem; font-weight: 600; }
+    section { margin-bottom: 2rem; background: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid #232d3f; }
+    h2 { color: #fff; margin-top: 0; font-size: 1.4rem; border-bottom: 1px solid #232d3f; padding-bottom: 0.5rem; }
+    code { background: #0f172a; padding: 0.2rem 0.5rem; border-radius: 4px; color: var(--accent); font-family: monospace; font-size: 0.9em; }
+    pre { background: #0f172a; padding: 1rem; border-radius: 6px; overflow-x: auto; border: 1px solid #1e293b; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.5rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .btn-github {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      font-weight: bold;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      transition: background 0.2s;
+    }
+    .btn-github:hover { background: #00cca3; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TacariguaJS</h1>
+    <p class="tagline">Motor de videojuegos 2D de ultra alto rendimiento para la web moderna.</p>
+    <div class="badge-container">
+      <span class="badge">WebGPU / WebGL2</span>
+      <span class="badge">ECS Architecture</span>
+      <span class="badge">Zero-GC</span>
+      <span class="badge">~109 KB Uncompressed</span>
+      <span class="badge">MIT License</span>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Acerca del Proyecto</h2>
+      <p>
+        <strong>TacariguaJS</strong> es un framework modular de alto rendimiento diseñado desde cero para la ejecución de juegos 2D sin pausas de depuración por Recolección de Basura (Garbage Collection). Implementa un pipeline RHI sobre WebGPU, arquitectura basada en Entidades, Componentes y Sistemas (ECS) y soporte para ejecución asíncrona mediante Web Workers y Worklets.
+      </p>
+      <a href="https://github.com/AbejorroDigital/Tacarigua-js/tree/main" target="_blank" rel="noopener" class="btn-github">
+        Ver Repositorio en GitHub &rarr;
+      </a>
+    </section>
+
+    <section>
+      <h2>Distribución CDN Directa</h2>
+      <p>Enlaces de producción servidos desde la red Edge de Netlify:</p>
+      <ul>
+        <li>
+          <strong>ESM Minificado (Producción):</strong><br>
+          <code>https://tacariguajs.netlify.app/dist/tacarigua.min.js</code>
+        </li>
+        <li>
+          <strong>ESM Unificado (Debug):</strong><br>
+          <code>https://tacariguajs.netlify.app/dist/tacarigua.js</code>
+        </li>
+        <li>
+          <strong>UMD Universal (Legacy / Script Tag):</strong><br>
+          <code>https://tacariguajs.netlify.app/dist/tacarigua.umd.js</code>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Uso Rápido</h2>
+      <p>Importación directa en módulos ECMAScript:</p>
+      <pre><code>import { Engine, World } from 'https://tacariguajs.netlify.app/dist/tacarigua.min.js';
+
+const app = new Engine({
+  renderer: 'webgpu',
+  canvas: document.getElementById('gameCanvas')
+});
+
+app.start();</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem;">
+      TacariguaJS &copy; 2026 — Licencia MIT. Desarrollado por <a href="https://github.com/AbejorroDigital/Tacarigua-js/tree/main" target="_blank" rel="noopener">AbejorroDigital</a>.
+    </p>
+  </footer>
+
+</body>
+</html>
