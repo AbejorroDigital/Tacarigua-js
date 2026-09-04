@@ -1,4 +1,5 @@
 # 🌟 Tacarigua.js (v1.0.0)
+![TacariguaJS Banner](https://raw.githubusercontent.com/AbejorroDigital/Tacarigua-js/main/documentacion/banner.JPG)
 
 > **El motor de videojuegos 2D para la web moderna.**  
 > Arquitectura **WebGPU nativa**, diseño orientado a datos (**ECS/SoA**), físicas y audio **multihilo (Off-Thread)**, conectividad **WebTransport (HTTP/3)** y filosofía estricta de **Cero Asignación de Basura (Zero-GC)**.
